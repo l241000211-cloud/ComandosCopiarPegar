@@ -36,7 +36,7 @@ Familiarizarse con la administración de archivos y directorios en la consola de
 
 ## 🎥 Video del funcionamiento
 * 📄 [Readme](Videos/Readme.txt)
-* ▶️ [Ver video en YouTube](https://youtube.com)
+* ▶️ [Ver video en YouTube]([https://youtube.com](https://youtu.be/1ySLu5c6O-U))
 
 ---
 
