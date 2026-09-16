@@ -26,4 +26,4 @@
 ---
 
 ## 🎥 Video del funcionamiento
-* ▶️ [Ver video en YouTube](PEGA_AQUI_EL_LINK_DE_TU_VIDEO)
+* ▶️ [Ver video en YouTube](https://youtu.be/bW77hn2X80k)
