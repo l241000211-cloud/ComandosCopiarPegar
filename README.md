@@ -1,49 +1,69 @@
-# 📌 Nombre del proyecto
-Comandos Copiar y Borrar en Ubuntu
+# 📌 Práctica: Comandos de Copia, Creación y Eliminación en Ubuntu
 
 ---
 
 ## 📖 Descripción
-El objetivo de esta práctica es dominar los comandos fundamentales para la creación, gestión, duplicación y eliminación de archivos y carpetas directamente desde la terminal de Ubuntu.
+El objetivo de esta práctica es dominar los comandos fundamentales para la creación, gestión, duplicación recursiva y eliminación de archivos y carpetas directamente desde la terminal de Ubuntu.
+
+---
 
 ## 🎯 Objetivos de aprendizaje
-Familiarizarse con la administración de archivos y directorios en la consola de Ubuntu mediante la ejecución de comandos para crear (`mkdir`), editar (`gedit`), copiar (`cp`) y eliminar (`rm`) elementos. Esto permite entender cómo usar sus diferentes variaciones y parámetros para operar el sistema de manera rápida y directa, teniendo un control total sin depender de la interfaz gráfica.
+* Administrar archivos y carpetas en la consola de Ubuntu mediante `mkdir`, `gedit`, `cp` y `rm`.
+* Comprender el uso del parámetro recursivo (`-r`) para manipular directorios completos.
+* Reconocer el funcionamiento de las llamadas al sistema y la eliminación definitiva en disco sin papelera de reciclaje.
+
+---
 
 ## 💻 Material utilizado
-* 💻 Laptop con el sistema operativo **Ubuntu**
+* Laptop con sistema operativo **Ubuntu Linux**
+* Intérprete de comandos **GNU Bash**
 
 ---
 
-## 📄 Informe
-* 📎 [Informe.pdf](Informe/practica.pdf)
+## 📂 Jerarquía de Carpetas
+* 📁 **[Codigo/](Codigo/)**: Script de automatización en Bash y comandos documentados.
+* 📁 **[Terminal/](Terminal/)**: Capturas nítidas de la ejecución de comandos.
+* 📁 **[Reporte/](Reporte/)**: Reporte formal en formato PDF con justificación técnica.
 
 ---
 
-## 📸 Evidencias de la práctica
+## ⚙️ Explicación Técnica de Comandos
+* **`mkdir`**: Crea nuevas entradas de directorio en el sistema de archivos.
+* **`cd`**: Cambia el directorio de trabajo activo (Current Working Directory).
+* **`gedit`**: Editor de texto gráfico para generar y modificar archivos planos.
+* **`ls -l`**: Lista entradas con detalles de inodo (permisos POSIX, dueño, tamaño y fecha).
+* **`cp`**: Duplica archivos regulares de un origen a un destino.
+* **`cp -r`**: Bandera recursiva que recorre el subárbol copiando carpetas y subcarpetas completas.
+* **`rm`**: Desvincula el inodo del archivo, liberando los bloques de datos de forma inmediata.
+* **`rm -r`**: Elimina directorios completos y su contenido de manera definitiva sin papelera de reciclaje.
+
+---
+
+## 📸 Evidencias de la Terminal
 
 | | | |
 |:---:|:---:|:---:|
-| ![1](Evidencias/crear%20practicas.png)<br><sub>1. Creación de directorios</sub> | ![2](Evidencias/creamos%20archivo.png)<br><sub>2. Creando archivo con editor</sub> | ![3](Evidencias/guardamos.png)<br><sub>3. Guardando archivo</sub> |
-| ![4](Evidencias/se%20copia%20el%20documento.png)<br><sub>4. Copiado de documento</sub> | ![5](Evidencias/creamos%202%20carpetas%20en%20Practica2.png)<br><sub>5. Creando carpetas en practica2</sub> | ![6](Evidencias/se%20va%20a%20la%20carpeta%20info%20y%20se%20crea%20el%20archivo.png)<br><sub>6. Creando archivo dentro de info</sub> |
-| ![7](Evidencias/copiamos%20capetas%20vacia%20e%20info.png)<br><sub>7. Copiado recursivo de carpetas</sub> | ![8](Evidencias/se%20borra%20el%20archivo%20y%20la%20carpeta.png)<br><sub>8. Borrado con rm y rm -r</sub> | ![9](Evidencias/crear%20practicas.png)<br><sub>9. Verificación de resultados</sub> |
+| ![1](Terminal/1.png)<br><sub>1. Creación de directorios (`mkdir`)</sub> | ![2](Terminal/2.png)<br><sub>2. Creación de archivo (`gedit`)</sub> | ![3](Terminal/3.png)<br><sub>3. Guardado en disco</sub> |
+| ![4](Terminal/4.png)<br><sub>4. Copiado de documento (`cp`)</sub> | ![5](Terminal/5.png)<br><sub>5. Carpetas en practica2</sub> | ![6](Terminal/6.png)<br><sub>6. Archivo dentro de info</sub> |
+| ![7](Terminal/7.png)<br><sub>7. Copia recursiva (`cp -r`)</sub> | ![8](Terminal/8.png)<br><sub>8. Borrado con `rm` y `rm -r`</sub> | ![9](Terminal/9.png)<br><sub>9. Verificación de borrado (`ls`)</sub> |
 
 ---
 
-## 📝 Comandos
-* 💻 [Comandos.txt](Comandos/comandos.txt)
+## 📄 Reporte Formal
+* 📎 [Descargar Reporte PDF](Reporte/practica.pdf)
+
+---
+
+## 💻 Código y Scripts
+* 📜 [script.sh](Codigo/script.sh)
 
 ---
 
 ## 🎥 Video del funcionamiento
-* 📄 [Readme](Videos/Readme.txt)
-* ▶️ [Ver video en YouTube](https://youtu.be/1ySLu5c6O-U)
+* ▶️ [Ver video en YouTube](PEGA_AQUI_EL_ENLACE_DE_TU_VIDEO)
 
 ---
 
-## 💡 Conclusiones
-La práctica permitió reforzar la administración directa del sistema de archivos en Ubuntu. Se comprendió la potencia y responsabilidad al usar comandos de manipulación como `cp` y `rm`, destacando la importancia de aplicar los parámetros correctos (como `-r` para procesar carpetas completas). El uso de la terminal nos enseña que las acciones son inmediatas y definitivas —especialmente al eliminar con `rm -r`, ya que no existe una papelera de reciclaje—, lo que exige mayor precaución al teclear, pero a cambio ofrece una velocidad y un nivel de control muy superior al uso tradicional del ratón.
-
----
-
-## 📊 Resultados
-* 📈 [Resultados.pdf](Resultados/resultado.pdf)
+## 💡 Conclusiones Técnicas
+1. **Manejo de Recursividad:** En entornos tipo Unix, los directorios son tablas que contienen referencias a otros archivos. Operaciones estructurales como `cp` o `rm` exigen explícitamente el parámetro `-r` para recorrer el árbol jerárquico de inodos.
+2. **Persistencia e Irreversibilidad:** A diferencia de las interfaces gráficas, la ejecución de `rm` a nivel de consola desasigna punteros de disco en tiempo real, careciendo de un buffer de recuperación (papelera), lo que demanda validación estricta previa a ejecutar órdenes destructivas.
