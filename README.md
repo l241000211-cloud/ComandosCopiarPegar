@@ -45,8 +45,7 @@ El objetivo de esta práctica es dominar los comandos fundamentales para la crea
 |:---:|:---:|:---:|
 | ![1](Terminal/1.png)<br><sub>1. Creación de directorios (`mkdir`)</sub> | ![2](Terminal/2.png)<br><sub>2. Creación de archivo (`gedit`)</sub> | ![3](Terminal/3.png)<br><sub>3. Guardado en disco</sub> |
 | ![4](Terminal/4.png)<br><sub>4. Copiado de documento (`cp`)</sub> | ![5](Terminal/5.png)<br><sub>5. Carpetas en practica2</sub> | ![6](Terminal/6.png)<br><sub>6. Archivo dentro de info</sub> |
-| ![7](Terminal/7.png)<br><sub>7. Copia recursiva (`cp -r`)</sub> | ![8](Terminal/8.png)<br><sub>8. Borrado con `rm` y `rm -r`</sub> | ![9](Terminal/9.png)<br><sub>9. Verificación de borrado (`ls`)</sub> |
-
+| ![7](Terminal/7.png)<br><sub>7. Copia recursiva (`cp -r`)</sub> | ![8](Terminal/8.png)<br><sub>8. Borrado con `rm` y `rm -r`</sub> | 
 ---
 
 ## 📄 Reporte Formal
